@@ -1,0 +1,21 @@
+[
+  {
+    "op": "core/column-addition",
+    "description": "Create column ID at index 1 based on column AreaCode using expression grel:cells[\"AreaCode\"].value + \"-\" + cells[\"Category\"].value + \"-\" + cells[\"Period\"].value.urlify()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "baseColumnName": "AreaCode",
+    "expression": "grel:cells[\"AreaCode\"].value + \"-\" + cells[\"Category\"].value + \"-\" + cells[\"Period\"].value.urlify()",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column ID to position 0",
+    "columnName": "ID",
+    "index": 0
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column AreaCode to type http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrictWard",
+    "columnName": "AreaCode",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://data.ordnancesurvey.co.uk/datasets/boundary-line/apis/reconciliation",
+      "identifierSpace": "http://data.ordnancesurvey.co.uk/id/data/boundary-line",
+      "schemaSpace": "http://data.ordnancesurvey.co.uk/id/data/boundary-line",
+      "type": {
+        "id": "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrictWard",
+        "name": "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrictWard"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "description": "Match each cell to its best recon candidate in column AreaCode",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "AreaCode"
+  }
+]
