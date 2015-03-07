@@ -1,9 +1,9 @@
-Generic Stats
+Generic Stats Cube
 =================
 
 Overview
 --------
-A generic Refine project to model statistics as RDF data cubes.
+A generic Open Refine project to model statistics as RDF data cubes.
 
 
 Use case
