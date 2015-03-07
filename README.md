@@ -29,14 +29,14 @@ Installation
 ----------------
 To replicate the example RDF file, follow these steps:
 
-- Download/Open/Run Open Refine (http://openrefine.org/)
-- Add the RDF Extension to Refine (http://refine.deri.ie/) 
-- "Create Project" in Refine, using the "ExampleStatsCube-data.csv" file.
-- Once open, use the Apply/Extract function to run the following steps (copy and paste the JSON):
--- Step 1 - Create an ID for each observation - use file "1-genericStats-ID.json" 
--- Step 2 - Reconcile areas* - use file "2-genericStats-ReconcileAreas.json" (this step can be skipped if areas are not applied).
--- Step 3 - Apply the RDF Skeleton - use file "3-genericStats-RDF-Skeleton.json"
-- Once completed output the RDF file via Export > RDF (as either XML or Turtle)
+1. Download/Open/Run Open Refine (http://openrefine.org/)
+2. Add the RDF Extension to Refine (http://refine.deri.ie/) 
+3. "Create Project" in Refine, using the "ExampleStatsCube-data.csv" file.
+4. Once open, use the Apply/Extract function to run the following steps (copy and paste the JSON):
+⋅⋅1. Step 1 - Create an ID for each observation - use file "1-genericStats-ID.json" 
+⋅⋅2. Step 2 - Reconcile areas* - use file "2-genericStats-ReconcileAreas.json" (this step can be skipped if areas are not applied).
+⋅⋅3. Step 3 - Apply the RDF Skeleton - use file "3-genericStats-RDF-Skeleton.json"
+5. Once completed output the RDF file via Export > RDF (as either XML or Turtle)
 
 Or
 
